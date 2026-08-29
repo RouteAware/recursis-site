@@ -29,6 +29,26 @@ header{padding:26px 0;border-bottom:1px solid transparent}
 .mark{width:26px;height:26px;flex:none}
 .mark path{fill:none;stroke:var(--accent);stroke-linecap:round;stroke-linejoin:round}
 .mark .eye{fill:var(--bg);stroke:none}
+
+/* the ouroboros draws itself */
+@keyframes rdraw{to{stroke-dashoffset:0}}
+@keyframes rfade{to{opacity:1}}
+.draw{stroke-dasharray:260;stroke-dashoffset:260}
+.fade{opacity:0}
+.mark .draw{animation:rdraw .9s ease-out .15s forwards}
+.mark .fade{animation:rfade .3s ease-out .95s forwards}
+.hero-mark .draw{animation:rdraw 1.5s ease-out forwards}
+.hero-mark .fade{animation:rfade .5s ease-out forwards}
+.hero-mark g:nth-of-type(1) .draw{animation-delay:.4s}
+.hero-mark g:nth-of-type(1) .fade{animation-delay:1.7s}
+.hero-mark g:nth-of-type(2) .draw{animation-delay:1.3s}
+.hero-mark g:nth-of-type(2) .fade{animation-delay:2.6s}
+.hero-mark g:nth-of-type(3) .draw{animation-delay:2.2s}
+.hero-mark g:nth-of-type(3) .fade{animation-delay:3.5s}
+@media(prefers-reduced-motion:reduce){
+  .draw{animation:none !important;stroke-dashoffset:0}
+  .fade{animation:none !important;opacity:1}
+}
 .brand .name{font-weight:700;letter-spacing:.14em;font-size:15px}
 .links{display:flex;gap:22px;font-size:13px;color:var(--muted)}
 .links a:hover,.links a.here{color:var(--accent)}
@@ -44,10 +64,12 @@ header{padding:26px 0;border-bottom:1px solid transparent}
 .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.22em;text-transform:uppercase}
 h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.04;font-weight:700;margin-top:18px;letter-spacing:-.02em;text-wrap:balance;max-width:18ch}
 .lede{color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem);margin-top:22px;max-width:54ch}
-.hero-mark{position:absolute;right:-40px;top:20px;width:340px;height:340px;opacity:.08;pointer-events:none}
+.hero-mark{position:absolute;right:-40px;top:20px;width:340px;height:340px;opacity:.12;pointer-events:none}
 @media(max-width:760px){.hero-mark{display:none}}
 @media(max-width:640px){.hero{padding:52px 0 28px}}
-.hero-mark path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.hero-mark path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.hero-mark g:nth-of-type(2) path{stroke-width:2.5}
+.hero-mark g:nth-of-type(3) path{stroke-width:5}
 .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
 .facts span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
 
