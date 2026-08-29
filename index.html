@@ -8,115 +8,131 @@
   <meta property="og:title" content="Recursis" />
   <meta property="og:description" content="A small portfolio of independent, honest software products." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recursisdigital.com" />
+  <link rel="canonical" href="https://recursisdigital.com" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0b0d'/%3E%3Crect x='6' y='6' width='20' height='20' fill='none' stroke='%235eead4' stroke-width='2'/%3E%3Crect x='12' y='12' width='8' height='8' fill='none' stroke='%235eead4' stroke-width='2'/%3E%3C/svg%3E" />
-  <style>
-    :root{
-      --bg:#0a0b0d; --panel:#121417; --line:#23272e; --text:#e9eaec;
-      --muted:#8b9099; --accent:#5eead4; --accent-dim:#2f4f4a;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{-webkit-text-size-adjust:100%}
-    body{
-      background:var(--bg); color:var(--text);
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-      line-height:1.5; -webkit-font-smoothing:antialiased; min-height:100vh;
-      display:flex; flex-direction:column;
-    }
-    .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
-    .wrap{width:100%;max-width:960px;margin:0 auto;padding:0 24px}
-    a{color:inherit;text-decoration:none}
-
-    header{padding:28px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .mark{width:26px;height:26px;flex:none}
-    .mark rect{fill:none;stroke:var(--accent);stroke-width:2}
-    .brand .name{font-weight:700;letter-spacing:.14em;font-size:15px}
-
-    .hero{padding:72px 0 40px}
-    .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.22em;text-transform:uppercase}
-    h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.05;font-weight:700;margin-top:18px;letter-spacing:-.02em;text-wrap:balance;max-width:16ch}
-    .lede{color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem);margin-top:20px;max-width:52ch}
-
-    .dir{padding:24px 0 64px}
-    .dir h2{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
-    .grid{display:grid;grid-template-columns:1fr;gap:14px}
-    @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
-    .card{
-      display:block;border:1px solid var(--line);background:var(--panel);border-radius:12px;
-      padding:22px;transition:border-color .15s ease,transform .15s ease;
-    }
-    .card:hover{border-color:var(--accent-dim);transform:translateY(-2px)}
-    .card .top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .card .vname{font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
-    .pill{font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:4px 9px;color:var(--muted);white-space:nowrap}
-    .pill.live{color:var(--accent);border-color:var(--accent-dim)}
-    .card p{color:var(--muted);font-size:.95rem;margin-top:8px}
-    .card .go{margin-top:14px;color:var(--accent);font-size:.8rem;letter-spacing:.04em}
-    .card.soon{opacity:.7}
-    .card.soon:hover{transform:none;border-color:var(--line)}
-
-    footer{margin-top:auto;border-top:1px solid var(--line);padding:26px 0}
-    .foot{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:space-between;color:var(--muted);font-size:12px}
-    footer a:hover{color:var(--accent)}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">
-        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect x="4" y="4" width="24" height="24"/><rect x="10" y="10" width="12" height="12"/><rect x="14" y="14" width="4" height="4"/>
-        </svg>
-        <span class="name">RECURSIS</span>
+      <div class="nav">
+        <a class="brand" href="/">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect x="4" y="4" width="24" height="24"/><rect x="10" y="10" width="12" height="12"/><rect x="14" y="14" width="4" height="4"/>
+          </svg>
+          <span class="name display">RECURSIS</span>
+        </a>
+        <nav class="links mono">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#principles">Principles</a>
+          <a href="/about.html">About</a>
+        </nav>
       </div>
     </header>
 
     <section class="hero">
+      <svg class="hero-mark" viewBox="0 0 200 200" aria-hidden="true">
+        <rect x="10" y="10" width="180" height="180"/>
+        <rect x="40" y="40" width="120" height="120"/>
+        <rect x="70" y="70" width="60" height="60"/>
+        <rect x="88" y="88" width="24" height="24"/>
+      </svg>
       <p class="eyebrow mono">Independent software ventures</p>
-      <h1>We build honest software people actually use.</h1>
+      <h1 class="display">We build honest software people actually use.</h1>
       <p class="lede">Recursis is a small, self-funded holding company. We design, build, and operate a focused portfolio of products — no hype, no dark patterns, no selling your data.</p>
+      <div class="facts mono">
+        <span>Self-funded</span>
+        <span>Built &amp; operated in-house</span>
+        <span>Five ventures live</span>
+      </div>
     </section>
 
-    <section class="dir">
-      <h2 class="mono">The portfolio</h2>
+    <section class="dir" id="portfolio">
+      <h2 class="sect-head mono"><b>01</b>The portfolio</h2>
       <div class="grid">
         <a class="card" href="https://toctalk.app" target="_blank" rel="noopener">
-          <div class="top"><span class="vname">TOCTalk</span><span class="pill live">Live</span></div>
-          <p>A private community app for coworkers — a bulletin board with a feed. iOS &amp; Android.</p>
+          <div class="top"><span class="vname display">TOCTalk</span><span class="pill live">Live</span></div>
+          <div class="sub mono">Community · iOS &amp; Android</div>
+          <p>A private community app for coworkers — a bulletin board with a feed, built for one campus at a time. On the App Store and Google Play.</p>
           <div class="go mono">toctalk.app →</div>
         </a>
         <a class="card" href="https://kitid.app" target="_blank" rel="noopener">
-          <div class="top"><span class="vname">KitID</span><span class="pill live">Live</span></div>
-          <p>Point your camera at any tactical loadout and understand it — then build your own on your budget. By Gear Wizard Armory.</p>
+          <div class="top"><span class="vname display">KitID</span><span class="pill live">Live</span></div>
+          <div class="sub mono">AI gear ID · Gear Wizard Armory</div>
+          <p>Point your camera at any tactical loadout and understand it — then build your own kit on your mission and your budget.</p>
           <div class="go mono">kitid.app →</div>
         </a>
-        <a class="card" href="https://pokespa.com" target="_blank" rel="noopener">
-          <div class="top"><span class="vname">PokéSpa</span><span class="pill live">Live</span></div>
-          <p>Careful, honest restoration for Pokémon &amp; collectible trading cards.</p>
-          <div class="go mono">pokespa.com →</div>
-        </a>
         <a class="card" href="https://berouteaware.com" target="_blank" rel="noopener">
-          <div class="top"><span class="vname">RouteAware</span><span class="pill">Rebuilding</span></div>
-          <p>Situational-awareness tooling. Being rebuilt from the ground up.</p>
+          <div class="top"><span class="vname display">Lane Alerts</span><span class="pill live">Live</span></div>
+          <div class="sub mono">Freight · by RouteAware</div>
+          <p>A free tool for freight brokers: watch a lane for freeze, heat, weather, and traffic risk, and get a plain-language verdict by email.</p>
           <div class="go mono">berouteaware.com →</div>
         </a>
+        <a class="card" href="https://pokespa.com" target="_blank" rel="noopener">
+          <div class="top"><span class="vname display">PokéSpa</span><span class="pill live">Live</span></div>
+          <div class="sub mono">Collectibles · restoration</div>
+          <p>Careful, fully disclosed restoration for Pokémon and collectible trading cards.</p>
+          <div class="go mono">pokespa.com →</div>
+        </a>
         <a class="card" href="https://neverwatchicarley.com" target="_blank" rel="noopener">
-          <div class="top"><span class="vname">Never Watch iCarley</span><span class="pill">For fun</span></div>
+          <div class="top"><span class="vname display">Never Watch iCarley</span><span class="pill">For fun</span></div>
+          <div class="sub mono">Parody · PSA</div>
           <p>A deadpan public-service parody. Please do not overthink it.</p>
           <div class="go mono">neverwatchicarley.com →</div>
         </a>
         <div class="card soon">
-          <div class="top"><span class="vname">More</span><span class="pill">In the works</span></div>
+          <div class="top"><span class="vname display">More</span><span class="pill">In the works</span></div>
+          <div class="sub mono">Pipeline</div>
           <p>New ventures are always in the pipeline. If it's honest and useful, it belongs here.</p>
           <div class="go mono">soon</div>
         </div>
       </div>
     </section>
 
+    <section id="principles">
+      <h2 class="sect-head mono"><b>02</b>How we build</h2>
+      <div class="plist">
+        <div class="prin">
+          <div class="num mono">/ 01</div>
+          <h3 class="display">Honest copy, always</h3>
+          <p>A product page never claims what the product doesn't do. If a feature is coming, we say "coming." If something is rough, we say so.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 02</div>
+          <h3 class="display">Your data isn't the product</h3>
+          <p>We never sell user data. Where our products earn money, it's from attention and value we create — sponsorships, services, useful features — not from you.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 03</div>
+          <h3 class="display">Small on purpose</h3>
+          <p>A focused portfolio, each product designed and operated by the people who built it. Small enough to care about every screen.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 04</div>
+          <h3 class="display">Ship carefully</h3>
+          <p>Every change climbs a ladder — built, tested, staged, then released — with a way back written down before it ships.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="strip">
+        <p><strong style="color:var(--text)">Why "Recursis"?</strong> Ventures within a venture — the mark is a square inside a square inside a square. Read the longer story on the about page.</p>
+        <a class="btn mono" href="/about.html">About Recursis →</a>
+      </div>
+    </section>
+
     <footer>
       <div class="foot">
         <span class="mono">© 2026 Recursis Holdings</span>
-        <a class="mono" href="mailto:info@alexandermhughes.com">info@alexandermhughes.com</a>
+        <div class="fl mono">
+          <a href="/about.html">About</a>
+          <a href="mailto:info@alexandermhughes.com">info@alexandermhughes.com</a>
+        </div>
       </div>
     </footer>
   </div>
