@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pitch an idea — Recursis</title>
+  <meta name="description" content="Have an app or website idea? Pitch it to Recursis — if it fits, we'll build it with you or partner to get it running." />
+  <meta property="og:title" content="Pitch an idea to Recursis" />
+  <meta property="og:description" content="If it's honest and useful, we want to hear it. We build, or we partner." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recursisdigital.com/ideas.html" />
+  <meta property="og:image" content="https://recursisdigital.com/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0b0d" />
+  <link rel="canonical" href="https://recursisdigital.com/ideas.html" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=2" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <a class="brand" href="/">
+          <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path class="draw" stroke-width="9" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
+            <path class="fade" stroke-width="7" d="M33,40 L38,31"/>
+            <path class="fade" stroke-width="5" d="M38,31 L44,20"/>
+            <circle class="eye fade" cx="47" cy="13" r="4"/>
+          </svg>
+          <span class="name display">RECURSIS</span>
+        </a>
+        <nav class="links mono">
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#principles">Principles</a>
+          <a href="/about.html">About</a>
+          <a class="here" href="/ideas.html">Pitch</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" style="padding-bottom:12px">
+      <p class="eyebrow mono">Pitch Recursis</p>
+      <h1 class="display">Got an idea? Run it back with us.</h1>
+      <p class="lede">Have an app or website idea you can't build alone? Pitch it. A person reads every submission — and when an idea fits how we build, we'll reach out to <strong style="color:var(--text)">build it with you or partner up</strong> and get it running for real.</p>
+    </section>
+
+    <section>
+      <h2 class="sect-head mono">How it works</h2>
+      <div class="plist">
+        <div class="prin">
+          <div class="num mono">/ 01</div>
+          <h3 class="display">You pitch it</h3>
+          <p>The form below. Plain words beat pitch decks — what it does, who it's for, why it matters.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 02</div>
+          <h3 class="display">We actually read it</h3>
+          <p>A person, not a filter. We're a small shop, so we're honest about capacity: we reply to what genuinely fits.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 03</div>
+          <h3 class="display">If it fits, we build together</h3>
+          <p>We'll reach out and shape it with you — a straight build, a partnership, or something in between. Terms get decided together, on paper, before any work starts.</p>
+        </div>
+        <div class="prin">
+          <div class="num mono">/ 04</div>
+          <h3 class="display">What fits here</h3>
+          <p>Small, sharp, honest, useful — the same bar as everything in the portfolio. No hype machines, no dark patterns, nothing that sells user data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sect-head mono">The pitch</h2>
+      <form id="f" class="pitch-form" novalidate>
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" autocomplete="name" required maxlength="120" />
+        </div>
+        <div>
+          <label for="email">Email <span>— where we reply</span></label>
+          <input type="email" id="email" autocomplete="email" required maxlength="200" />
+        </div>
+        <div>
+          <label for="title">The idea, in a few words</label>
+          <input type="text" id="title" required maxlength="160" placeholder="e.g. an app that…" />
+        </div>
+        <div>
+          <label for="pitch">The pitch</label>
+          <textarea id="pitch" required maxlength="6000" placeholder="What does it do? Who is it for? Why does it need to exist? What's your part in it?"></textarea>
+        </div>
+        <div>
+          <label for="links">Links <span>— optional: sketches, docs, anything</span></label>
+          <input type="text" id="links" maxlength="1000" />
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <label class="agree">
+          <input type="checkbox" id="agree" required />
+          <span>I've read the fine print below.</span>
+        </label>
+        <div>
+          <button class="btn submitbtn" id="send" type="submit">Pitch it →</button>
+        </div>
+        <div id="status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="sect-head mono">The fine print</h2>
+      <div class="strip" style="display:block">
+        <p style="max-width:none"><strong style="color:var(--text)">Read before you pitch — it protects us both.</strong>
+        Submissions aren't confidential, so don't send trade secrets. Sending an idea doesn't create a partnership,
+        a payment obligation, or any agreement — those only exist when we've both signed something. We're always
+        building, so we may already be working on something similar to what you send. And you keep your idea:
+        pitching costs you nothing and takes nothing from you.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <span class="mono">© 2026 Recursis Holdings</span>
+        <div class="fl mono">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="mailto:info@alexandermhughes.com">info@alexandermhughes.com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var statusEl = document.getElementById('status');
+      var btn = document.getElementById('send');
+      function say(m, c) { statusEl.textContent = m; statusEl.className = c || ''; }
+      document.getElementById('f').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var title = document.getElementById('title').value.trim();
+        var pitch = document.getElementById('pitch').value.trim();
+        if (!name || !email || !title || !pitch) { say('Name, email, the idea, and the pitch are all needed.', 'err'); return; }
+        if (!document.getElementById('agree').checked) { say('Give the fine print a read first — then check the box.', 'err'); return; }
+        btn.disabled = true; say('Sending…');
+        fetch('/api/idea', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name, email: email, title: title, pitch: pitch,
+            links: document.getElementById('links').value.trim(),
+            website: document.getElementById('website').value
+          })
+        }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (res) {
+            btn.disabled = false;
+            if (res.ok) {
+              say('Pitched! If it fits how we build, you\'ll hear from a real person.', 'ok');
+              document.getElementById('f').reset();
+            } else {
+              say(res.j && res.j.error || 'Couldn\'t send — email us instead.', 'err');
+            }
+          })
+          .catch(function () { btn.disabled = false; say('Network hiccup — try again or email us.', 'err'); });
+      });
+    })();
+  </script>
+</body>
+</html>
