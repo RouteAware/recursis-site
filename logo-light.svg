@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Recursis triangular ouroboros — light-ground variant (for white/paper backgrounds).
+       Paper/ink inverted per docs/BRAND.md tokens: ink --bg #0a0b0d, eye --text #e9eaec.
+       Geometry identical to logo.svg (the canonical dark-ground master). -->
+  <g fill="none" stroke="#0a0b0d" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="7" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
+    <path stroke-width="5.5" d="M33,40 L38,31"/>
+    <path stroke-width="4" d="M38,31 L44,20"/>
+  </g>
+  <circle cx="47" cy="13" r="2.3" fill="#e9eaec"/>
+</svg>
