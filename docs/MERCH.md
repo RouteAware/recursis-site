@@ -41,8 +41,13 @@ manual resize/position.
 - Sticker ($6, print-recursis-sticker.png) — master ready, product not built
 - KitID + Lane Alerts collab tees DEFERRED — only 512px rasters exist; need
   print-grade vector masters first
-- Theme polish: current theme is default w/ stock painting banner — replace
-  with dark brand look (Site design → Theme/Style; brand: bg #0a0b0d, accent #5eead4)
+- ~~Theme polish~~ DONE 2026-08-30 (shop cleanup pass): stock hero replaced
+  with two brand posters (masters in merch-art/shop-banner-*.png; "RUN IT
+  *back*" headline), theme colors set to brand (Primary #5eead4, bg #0a0b0d,
+  dark text over primary), two PUBLIC collections created and wired as
+  homepage sections — "The Staples" (Tee/Portfolio Tee/Polo/Mug, manual
+  order) then "Venture Collabs" (8 collab items, Newest-first sort so the
+  $32 tees lead; storefront caches sort changes for a few minutes)
 - Alexander: payout check (shared account — if NWIC payout is set, all shops inherit? verify), optional shop.recursisdigital.com domain
 - ~~Recursis-Site: add shop link to the directory~~ DONE 2026-08-30 — "Merch"
   link in the index nav + all four page footers (index/about/ideas/hire)
