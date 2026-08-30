@@ -156,3 +156,11 @@ footer a:hover{color:var(--accent)}
   .plist{grid-template-columns:repeat(4,1fr)}
   .prin{padding:24px 20px}
 }
+
+/* subtle badass: quiet teal glow on interactive surfaces */
+.card:hover{box-shadow:0 12px 44px rgba(94,234,212,.07)}
+.prin{transition:border-color .15s ease}
+.prin:hover{border-color:var(--accent-dim)}
+.btn:hover{box-shadow:0 0 24px rgba(94,234,212,.18)}
+.hero-mark{filter:drop-shadow(0 0 28px rgba(94,234,212,.10))}
+@media(prefers-reduced-motion:reduce){.prin{transition:none}}

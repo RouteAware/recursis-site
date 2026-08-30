@@ -1,6 +1,6 @@
 // Recursis idea-pitch endpoint — forwards submissions to Alexander via Resend.
 
-const TO = 'info@alexandermhughes.com';
+const TO = 'info@recursisdigital.com';
 const FROM = 'Recursis pitches <pitches@recursisdigital.com>';
 
 module.exports = async (req, res) => {
@@ -54,12 +54,12 @@ module.exports = async (req, res) => {
     if (!r.ok) {
       const detail = await r.text().catch(() => '');
       console.error('Resend error', r.status, detail.slice(0, 300));
-      res.status(502).json({ error: "Couldn't send just now — email us at info@alexandermhughes.com instead." });
+      res.status(502).json({ error: "Couldn't send just now — email us at info@recursisdigital.com instead." });
       return;
     }
     res.status(200).json({ ok: true });
   } catch (e) {
     console.error('idea error', e);
-    res.status(500).json({ error: "Something went wrong — email us at info@alexandermhughes.com instead." });
+    res.status(500).json({ error: "Something went wrong — email us at info@recursisdigital.com instead." });
   }
 };

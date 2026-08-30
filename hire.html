@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hire Recursis</title>
+  <meta name="description" content="Hire the shop that built everything on this site: websites, infrastructure, and mobile apps — designed, built, and shipped by a small team you can actually talk to." />
+  <meta property="og:title" content="Hire Recursis" />
+  <meta property="og:description" content="Websites, infrastructure, mobile apps. Built by the same hands that built the portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recursisdigital.com/hire.html" />
+  <meta property="og:image" content="https://recursisdigital.com/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0b0d" />
+  <link rel="canonical" href="https://recursisdigital.com/hire.html" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=2" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <a class="brand" href="/">
+          <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path class="draw" stroke-width="9" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
+            <path class="fade" stroke-width="7" d="M33,40 L38,31"/>
+            <path class="fade" stroke-width="5" d="M38,31 L44,20"/>
+            <circle class="eye fade" cx="47" cy="13" r="4"/>
+          </svg>
+          <span class="name display">RECURSIS</span>
+        </a>
+        <nav class="links mono">
+          <a href="/#portfolio">Portfolio</a>
+          <a href="/#hire">Services</a>
+          <a href="/about.html">About</a>
+          <a class="here" href="/hire.html">Hire us</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" style="padding-bottom:12px">
+      <p class="eyebrow mono">Hire the shop</p>
+      <h1 class="display">You've seen the portfolio. It's for hire.</h1>
+      <p class="lede">Everything Recursis runs — the apps, the sites, the stores, the infrastructure underneath — was designed, built, and shipped in-house. We do the same for clients: <strong style="color:var(--text)">websites, infrastructure, and mobile apps</strong>, built fast and documented so you own them.</p>
+    </section>
+
+    <section>
+      <h2 class="sect-head mono">The pitch, plainly</h2>
+      <div class="plist" style="grid-template-columns:1fr">
+        <div class="prin" style="max-width:640px">
+          <p style="color:var(--muted)">Describe the project below. You'll get a reply from the person who'd actually build it — with an honest take, including <em style="color:var(--text)">"you don't need us for this"</em> when that's the truth. No calls until you want one. No obligation either way.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sect-head mono">The brief</h2>
+      <form id="f" class="pitch-form" novalidate>
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" autocomplete="name" required maxlength="120" />
+        </div>
+        <div>
+          <label for="email">Email <span>— where the reply goes</span></label>
+          <input type="email" id="email" autocomplete="email" required maxlength="200" />
+        </div>
+        <div>
+          <label for="project">What are we building?</label>
+          <textarea id="project" required maxlength="6000" placeholder="A website? An app? The plumbing behind one? Tell us what it does, who it's for, and where it's at today (idea, half-built, on fire...)."></textarea>
+        </div>
+        <div>
+          <label for="budget">Budget range <span>— optional, but it makes the honest answer faster</span></label>
+          <input type="text" id="budget" maxlength="200" placeholder="e.g. a few hundred, a few thousand, tell me what it takes" />
+        </div>
+        <div>
+          <label for="links">Links <span>— optional: current site, docs, sketches</span></label>
+          <input type="text" id="links" maxlength="1000" />
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <div>
+          <button class="btn submitbtn" id="send" type="submit">Send the brief →</button>
+        </div>
+        <div id="status" role="status" aria-live="polite"></div>
+        <p class="fineprint" style="color:var(--muted);font-size:12px">Prefer email? <a href="mailto:info@recursisdigital.com" style="text-decoration:underline">info@recursisdigital.com</a></p>
+      </form>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <span class="mono">© 2026 Recursis Holdings</span>
+        <div class="fl mono">
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="mailto:info@recursisdigital.com">info@recursisdigital.com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var statusEl = document.getElementById('status');
+      var btn = document.getElementById('send');
+      function say(m, c) { statusEl.textContent = m; statusEl.className = c || ''; }
+      document.getElementById('f').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var project = document.getElementById('project').value.trim();
+        if (!name || !email || !project) { say('Name, email, and the project are all needed.', 'err'); return; }
+        btn.disabled = true; say('Sending…');
+        fetch('/api/hire', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name, email: email, project: project,
+            budget: document.getElementById('budget').value.trim(),
+            links: document.getElementById('links').value.trim(),
+            website: document.getElementById('website').value
+          })
+        }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (res) {
+            btn.disabled = false;
+            if (res.ok) { say('Brief received. A builder — not a bot — will reply.', 'ok'); document.getElementById('f').reset(); }
+            else { say(res.j && res.j.error || 'Couldn\'t send — email us instead.', 'err'); }
+          })
+          .catch(function () { btn.disabled = false; say('Network hiccup — try again or email us.', 'err'); });
+      });
+    })();
+  </script>
+</body>
+</html>
