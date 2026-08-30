@@ -1,9 +1,7 @@
 // Recursis idea-pitch endpoint — forwards submissions to Alexander via Resend.
-// Sender domain is the Resend-verified berouteaware.com (recursisdigital.com
-// can be verified in Resend later if we want a branded from-address).
 
 const TO = 'info@alexandermhughes.com';
-const FROM = 'Recursis pitches <alerts@berouteaware.com>';
+const FROM = 'Recursis pitches <pitches@recursisdigital.com>';
 
 module.exports = async (req, res) => {
   res.setHeader('Cache-Control', 'no-store');
