@@ -44,8 +44,8 @@ manual resize/position.
 - Theme polish: current theme is default w/ stock painting banner — replace
   with dark brand look (Site design → Theme/Style; brand: bg #0a0b0d, accent #5eead4)
 - Alexander: payout check (shared account — if NWIC payout is set, all shops inherit? verify), optional shop.recursisdigital.com domain
-- Recursis-Site: add shop link to the directory (footer or a card) — pending
-  next deploy (machine was in disk distress 2026-08-30 ~01:00; see ~/Desktop/.hale-pending-2026-08-30.md)
+- ~~Recursis-Site: add shop link to the directory~~ DONE 2026-08-30 — "Merch"
+  link in the index nav + all four page footers (index/about/ideas/hire)
 
 ## Fourthwall gotchas (hard-won)
 - The "…" element menu REORDERS in edit mode ("Edit with Adobe Express"
