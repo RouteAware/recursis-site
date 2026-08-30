@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/(.*)",
@@ -18,7 +19,7 @@
       ]
     },
     {
-      "source": "/(logos/.*|og.png|apple-touch-icon.png)",
+      "source": "/(logos/.*|social/.*|og.png|apple-touch-icon.png|favicon.ico|favicon.png|logo.svg|logo-light.svg)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
       ]
