@@ -91,3 +91,11 @@ signal, not a paint job.
 recursisdigital.com (header, favicon, hero motif, about-page story). Venture
 brands (TOCTalk, KitID/GWA, Lane Alerts, PokéSpa) keep their own identities —
 Recursis is the parent mark, not a badge on their products.
+
+## Mobile nav drawer (2026-08-31)
+Header links collapse into a slide-in drawer below 760px — `.menu-btn`,
+`.drawer` and `.scrim` live in `styles.css`, behavior in `/nav.js`, markup on
+index / about / hire / ideas. The old flex row overflowed the right edge on a
+phone, so About, Pitch and Hire us were unreachable.
+**If you add a nav link, add it in BOTH places on that page:** the `.links` row
+(desktop) and the `.drawer` list (mobile).
