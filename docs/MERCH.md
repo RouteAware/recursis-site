@@ -69,3 +69,22 @@ manual resize/position.
   card that sits on Discover's "Recommended" row directly.
 - The mug "Add to shop" flow inserts a "Review your design on different
   sizes" dialog (Confirm bottom-right); tees skip straight to details.
+
+## 2026-09-04 — Comfort Colors migration (portfolio polish; plan ~/Desktop/FOURTHWALL-POLISH-2026-09.md)
+Same recipe as GWA (see Gear Wizard .LLC/MERCH-LINE-v2.md 2026-09-04 notes). Old Bella ids:
+Recursis Tee b85f82b5 (recursis-tee) · Portfolio 5c9cdae9 (portfolio-tee) · ×TOCTalk 8c506879
+(recursis-toctalk-tee) · ×PokéSpa d97fa029 (recursis-pokespa-tee) · ×TrailBrief 9d85f863
+(recursis-trailbrief-tee) · ×NWIC c64238da (recursis-never-watch-icarley-tee).
+Prices: Tee $28→$34 ($18.55/sale) · Portfolio $34→$40 · collabs $32→$38 ($16.60/sale).
+- 🔄 HIDDEN builds: Recursis Tee — 3e496221-8136-424e-b672-5c278d5dc721 (left chest 3.39×4.06")
+- 🔄 Portfolio Tee — a7669dfb-a39d-46e6-943a-1e4f5ac77504 ($40 / $18.60 per sale)
+- 🔄 Recursis × TOCTalk Tee — 9785a505-3869-4983-9bd6-86f5800572df ($38 / $16.60; icon 6.80" back)
+- 🔄 Recursis × PokéSpa Tee — fe6b6bde-84f2-4934-a520-d0f8b21e0135 ($38 / $16.60; frame 10" back)
+- 🔄 Recursis × TrailBrief Tee — d4da8380-ba7d-4686-a7a5-d9434522bbe4 ($38 / $16.60; mark 10" back)
+- 🔄 Recursis × Never Watch iCarley Tee — 0d48190e-ba13-4e3d-9e0f-d3fb7feb6c15 ($38 / $16.60; full back)
+Old full ids: Recursis Tee b85f82b5-fc19-45a4-890f-8eb0ba36536a · Portfolio 5c9cdae9-71d0-4e1f-9d7d-49a66b859ce1 ·
+×TOCTalk 8c506879-a116-4dd4-9792-87a5d06ecdcd · ×PokéSpa d97fa029-1fd4-4dfa-94b3-ef79f9e15ad5 ·
+×TrailBrief 9d85f863-624f-48b5-ba8d-7521f294f77a · ×NWIC c64238da-be2f-47fc-b67d-59cc1cbabdd2
+- ✅ FLIPPED LIVE 2026-09-04: all 6 new CC tees Public on the clean slugs; old Bella tees renamed `<slug>-bc` + Private
+  (rollback = swap URLs back + Public). curl: clean 200 ×6, -bc 404 ×6. Prices now $34 / $40 / $38 ×4.
+- ✅ Collections rebuilt (The Staples 4 / Venture Collabs 8). Hero verified. shop.recursisdigital.com CNAME live; LIVE over https ✅ (cert ~13 min after Entri).
