@@ -1,5 +1,7 @@
 // Recursis consulting/build inquiry — forwards to Alexander via Resend.
 
+const { rateLimited, tooLarge, oneLine } = require('./_guard.js');
+
 const TO = 'info@recursisdigital.com';
 const FROM = 'Recursis builds <pitches@recursisdigital.com>';
 
@@ -7,14 +9,16 @@ module.exports = async (req, res) => {
   res.setHeader('Cache-Control', 'no-store');
   if (req.method !== 'POST') { res.status(405).json({ error: 'Method not allowed' }); return; }
   try {
+    if (tooLarge(req, 64 * 1024)) { res.status(413).json({ error: 'That submission is too large.' }); return; }
+    if (rateLimited(req)) { res.status(429).json({ error: 'Too many submissions from this connection — give it a few minutes and try again.' }); return; }
     const { name, email, project, budget, links, website } = req.body || {};
     if (website) { res.status(200).json({ ok: true }); return; } // honeypot
 
     const clean = (s, max) => String(s || '').trim().slice(0, max);
-    const cName = clean(name, 120);
-    const cEmail = clean(email, 200);
+    const cName = oneLine(clean(name, 120));
+    const cEmail = oneLine(clean(email, 200));
     const cProject = clean(project, 6000);
-    const cBudget = clean(budget, 200);
+    const cBudget = oneLine(clean(budget, 200));
     const cLinks = clean(links, 1000);
     if (!cName || !cProject || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cEmail)) {
       res.status(400).json({ error: 'Name, a valid email, and the project description are all needed.' });
