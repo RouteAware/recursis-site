@@ -1,5 +1,5 @@
 # Recursis-Site — STATE (written by Hale at close, 2026-09-21)
-<!-- machine header (hale-close): branch master · HEAD 39126d2 · dirty 1 · unpushed 0 · worktrees 1 · verified-at 2026-09-21 09:13 -->
+<!-- machine header (hale-close): branch master · HEAD 42e1f3c · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-21 09:14 -->
 
 ## Now
 - Hale · nothing queued; the site is static and live. Next touch only when a card changes.
