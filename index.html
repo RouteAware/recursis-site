@@ -42,6 +42,19 @@
     ]
   }
   </script>
+  <style>
+    /* What we build — capability ladder (mobile-first) */
+    .rungs{list-style:none;display:grid;gap:12px}
+    .rung{border:1px solid var(--line);background:var(--panel-2);border-radius:14px;padding:20px;display:grid;gap:6px;transition:border-color .15s ease}
+    .rung:hover{border-color:var(--accent-dim)}
+    .rung .rnum{color:var(--accent);font-size:12px;letter-spacing:.14em}
+    .rung h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
+    .rung p{color:var(--muted);font-size:.92rem;margin-top:6px}
+    .rung p a{color:var(--text);border-bottom:1px solid var(--accent-dim)}
+    .rung p a:hover{border-bottom-color:var(--accent)}
+    @media(min-width:760px){.rung{grid-template-columns:104px 1fr;column-gap:20px;padding:22px 24px}.rung .rnum{padding-top:3px}}
+    @media(prefers-reduced-motion:reduce){.rung{transition:none}}
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -189,8 +202,61 @@
       </div>
     </section>
 
+    <section id="what-we-build">
+      <h2 class="sect-head mono"><b>02</b>What we build</h2>
+      <p class="lede" style="margin-top:0;max-width:62ch">From a one-page joke site to a native app that takes real payments. The portfolio above isn't just what we own — it's the range, and each one is a different kind of product built end to end. Simplest rung first.</p>
+      <ol class="rungs" style="margin-top:22px">
+        <li class="rung">
+          <div class="rnum mono">/ 01</div>
+          <div class="rbody">
+            <h3 class="display">A one-page site that lands one idea</h3>
+            <p>One screen, one point, nothing to scroll past. <a href="https://neverwatchicarley.com" target="_blank" rel="noopener">Never Watch iCarley</a> is a deadpan public-service parody — the whole product is the page, and it still has a domain, a design, and search traffic to earn.</p>
+          </div>
+        </li>
+        <li class="rung">
+          <div class="rnum mono">/ 02</div>
+          <div class="rbody">
+            <h3 class="display">An affiliate funnel with something worth reading around it</h3>
+            <p><a href="https://pokespa.com" target="_blank" rel="noopener">PokéSpa</a> is written articles, free tools people actually use — card values, show finder, drop radar — and affiliate links placed where they help instead of where they interrupt. Content in the front, commerce in the back.</p>
+          </div>
+        </li>
+        <li class="rung">
+          <div class="rnum mono">/ 03</div>
+          <div class="rbody">
+            <h3 class="display">A print-on-demand storefront wired to ads</h3>
+            <p>Art, product pages, storefront, and the Meta ad funnel pointed at them — no inventory, no warehouse. <a href="https://terribleshirtco.com" rel="noopener">Terrible Shirt Co</a> runs this way, and so do the merch shops behind our other brands.</p>
+          </div>
+        </li>
+        <li class="rung">
+          <div class="rnum mono">/ 04</div>
+          <div class="rbody">
+            <h3 class="display">A full-catalog store with hands-off fulfilment</h3>
+            <p><a href="https://gearwizardarmory.com" target="_blank" rel="noopener">Gear Wizard Armory</a> is a real Shopify catalog: product data, pricing rules, checkout, and orders that get placed with the supplier automatically instead of by hand. The boring part is the part that has to work.</p>
+          </div>
+        </li>
+        <li class="rung">
+          <div class="rnum mono">/ 05</div>
+          <div class="rbody">
+            <h3 class="display">A phone app that ships to both stores</h3>
+            <p><a href="https://toctalk.app" target="_blank" rel="noopener">TOCTalk</a> is a community app for coworkers, live on the App Store and Google Play; <a href="https://kitid.app" target="_blank" rel="noopener">KitID</a> ships a native app of its own. Review queues, signing, updates, crash reports — the parts of app work nobody puts on a slide.</p>
+          </div>
+        </li>
+        <li class="rung">
+          <div class="rnum mono">/ 06</div>
+          <div class="rbody">
+            <h3 class="display">Software people pay for</h3>
+            <p><a href="https://kitid.app" target="_blank" rel="noopener">KitID</a> identifies tactical gear from a photo and builds a kit around it, with payments running through Stripe. <a href="https://lanealert.app" target="_blank" rel="noopener">Lane Alerts</a> sends freight brokers a plain-language risk read on a lane. Accounts, billing, email delivery, uptime — held up by us, not a plugin.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="strip" style="margin-top:18px">
+        <p><strong style="color:var(--text)">Same hands on every rung.</strong> Designed, built, deployed, and still run in-house — and the ones further up the ladder, like RouteAware, LinkCart, and Vivaris, sit in the portfolio above with their real stage on them, because that's the rule here. If one of these rungs is the thing you need, tell us which: <a href="mailto:info@recursisdigital.com">info@recursisdigital.com</a>.</p>
+        <a class="btn mono" href="/hire">Start a project →</a>
+      </div>
+    </section>
+
     <section id="principles">
-      <h2 class="sect-head mono"><b>02</b>How we build</h2>
+      <h2 class="sect-head mono"><b>03</b>How we build</h2>
       <div class="plist">
         <div class="prin">
           <div class="num mono">/ 01</div>
@@ -216,7 +282,7 @@
     </section>
 
     <section id="hire">
-      <h2 class="sect-head mono"><b>03</b>The shop is for hire</h2>
+      <h2 class="sect-head mono"><b>04</b>The shop is for hire</h2>
       <div class="plist" style="grid-template-columns:1fr 1fr 1fr">
         <div class="prin">
           <div class="num mono">/ WEB</div>
