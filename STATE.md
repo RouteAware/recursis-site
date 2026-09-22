@@ -2,16 +2,20 @@
 <!-- machine header (hale-close): branch master · HEAD 42e1f3c · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-21 09:14 -->
 
 ## Now
-- Hale · nothing queued; the site is static and live. Next touch only when a card changes.
-- Alexander · optional: drop a `logos/miniverse.png` (40×40) so The Miniverse card matches the others.
+- Hale · branch `vivaris-card` is pushed and NOT merged: The Miniverse card → **Vivaris**, link
+  `https://vivaris.app`, and `logos/vivaris.png` (96×96, the same size as every other card logo).
+  Merge it only once vivaris.app actually resolves — until then the card would link to nothing.
+- Alexander · the logo ask below is CLOSED: the sim has a real mark now (sim-v2 branch
+  `vivaris-identity`, `apps/web/public/brand/`), and the card logo is cut from it.
 
 ## Verified live
-- The Miniverse card (In development) live on recursisdigital.com · `curl -s https://recursisdigital.com | grep -c sim-v2-eta` → 1 · 2026-09-18
+- The Miniverse card (In development) live on recursisdigital.com · `curl -s https://recursisdigital.com | grep -c sim-v2-eta` → 1 · 2026-09-18 · SUPERSEDED by `vivaris-card` once merged
 - Vercel production deploy Ready from commit 6252d08 · `npx vercel ls` in this folder · 2026-09-18
 
 ## Open owner calls
-- A logo for The Miniverse card · Hale's default: text-only card stays · decide-by: whenever
+- ~~A logo for The Miniverse card~~ · CLOSED 2026-09-21: the mark exists and is on the card
 - The card's status flips to "Live" only when a stranger flow is proven (council 09-18) · default: In development
+- Merging `vivaris-card` before vivaris.app resolves ships a dead link · Hale's default: hold the merge
 
 ## Rollback
 - `git revert 6252d08 && git push origin master` — Vercel auto-redeploys in ~6 s.
