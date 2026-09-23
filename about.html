@@ -12,18 +12,19 @@
   <meta property="og:image" content="https://recursisdigital.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Recursis — teal triangular ouroboros mark beside the line “We build honest software people actually use.” on a dark ground" />
+  <meta property="og:image:alt" content="Recursis — teal serpent ouroboros mark beside the line “We build honest software people actually use.” on a dark ground" />
   <meta property="og:site_name" content="Recursis" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://recursisdigital.com/og.png" />
   <meta name="theme-color" content="#0a0b0d" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="canonical" href="https://recursisdigital.com/about" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=3" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className+=" motion"}catch(e){}</script>
 </head>
 <body>
   <div class="wrap">
@@ -31,10 +32,13 @@
       <div class="nav">
         <a class="brand" href="/">
           <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
-            <path class="draw" stroke-width="9" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-            <path class="fade" stroke-width="7" d="M33,40 L38,31"/>
-            <path class="fade" stroke-width="5" d="M38,31 L44,20"/>
-            <circle class="eye fade" cx="47" cy="13" r="4"/>
+            <path class="body seg" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+            <path class="body seg" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+            <path class="body seg" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+            <path class="body seg" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+            <path class="body seg" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+            <path class="fillbody fade" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
+            <circle class="eye fade" cx="44.83" cy="18.98" r="2.45"/>
           </svg>
           <span class="name display">RECURSIS</span>
         </a>
@@ -72,7 +76,7 @@
       <h1 class="display">A small company that builds small, sharp things.</h1>
     </section>
 
-    <section class="prose">
+    <section class="prose" data-reveal>
       <p><strong>Recursis is a holding company for independent software ventures.</strong> It exists so that a handful of focused products — a community app, an AI gear identifier, a freight tool, a card-restoration service — can share one set of standards, one infrastructure playbook, and one owner who cares about all of them.</p>
 
       <h2 class="display">The name and the mark</h2>
@@ -118,5 +122,6 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
   <script defer src="/meta-pixel.js"></script>
   <script src="/nav.js" defer></script>
+  <script src="/craft.js" defer></script>
 </body>
 </html>

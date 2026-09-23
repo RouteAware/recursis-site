@@ -10,42 +10,67 @@ Recursis name draws from this file.
 "to run back." That's the company's heart: you run it back. Try, learn, return,
 try again.
 
-## The mark — triangular ouroboros
+## The mark — serpent ouroboros
 
-A snake eating its own tail, drawn as a triangle.
+A snake eating its own tail, drawn as a ring: clear head, eye, open jaw closed
+on the tail, a rhythm of scales cut into the body.
 
 - **The loop** = persistence. The cycle of never giving up, of always coming
   back to the problem.
-- **The triangle** = ingenuity. The simplest, strongest shape there is.
+- **The bite** = ingenuity. It closes the circle itself; nothing outside it
+  finishes the shape.
 - Together: *keep coming back, and come back sharper.*
 
+**NOT the triangular ouroboros** (retired 2026-09-23, owner ruling). The
+triangle-spiral form read as a triangle-within-triangle symbol the FBI has
+documented in another context; the resemblance alone is disqualifying for a
+company mark. The meaning carried over unchanged — only the form changed.
 **NOT nested squares** (retired 2026-08-29 — v0 placeholder, never use again).
 
 ### Canonical SVG (viewBox 0 0 100 100)
 
-Large sizes (head + eye + tapered tail into open mouth):
+Large sizes (tapered body, head + eye, scale rhythm cut in background colour):
 
 ```svg
 <svg viewBox="0 0 100 100">
-  <path stroke-width="7" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-  <path stroke-width="5.5" d="M33,40 L38,31"/>
-  <path stroke-width="4" d="M38,31 L44,20"/>
-  <circle cx="47" cy="13" r="2.3"/> <!-- eye: fill = background color -->
+<path class="body" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+    <path class="body" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+    <path class="body" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+    <path class="body" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+    <path class="body" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+    <path class="fillbody" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
+    <circle class="eye" cx="44.83" cy="18.98" r="2.45"/>
+    <path class="scale" d="M71.56 32.91 A28.14 28.14 0 1 1 26.95 34.86" stroke-width="2.74" stroke-dasharray="0.9 5.2"/>
 </svg>
-<!-- all paths: fill:none; stroke:accent; stroke-linecap/linejoin:round -->
+<!-- .body: fill:none; stroke:accent; round caps/joins (widths are on the paths)
+     .fillbody: fill+stroke accent   .eye/.scale: background colour -->
 ```
 
-Small sizes (≤32px — thicker strokes 9/7/5, eye optional; ≤16px — 11/7 two
-paths, no eye). Working sources: `index.html` header/hero/favicon.
+Small sizes (≤32px — drop the scale rhythm; ≤16px — drop the eye as well):
+
+```svg
+<svg viewBox="0 0 100 100">
+<path class="body" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+    <path class="body" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+    <path class="body" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+    <path class="body" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+    <path class="body" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+    <path class="fillbody" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
+</svg>
+```
+
+Working sources: the header `<svg class="mark">` in every page of
+`Recursis-Site`, `logo.svg`, `logo-light.svg`.
 
 ### Mark rules
 
-- Head at the apex, mouth open toward the tail — the bite must read.
+- Head at the top of the ring, mouth closed on the tail — the bite must read.
 - Round caps and joins everywhere; never sharp corners.
 - One color on dark ground is the default. Never add gradients, 3D, or outline
   effects.
 - Nested/concentric snakes are allowed as a *background motif only* (see the
-  site hero) — the recursion nod. The standalone logo is always a single snake.
+  site hero, where the three rings are rotated so the heads never stack) — the
+  recursion nod. The standalone logo is always a single snake.
 
 ## Palette
 
