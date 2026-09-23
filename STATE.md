@@ -1,5 +1,5 @@
 # Recursis-Site — STATE (written by Hale at close, 2026-09-23)
-<!-- machine header (hale-close): branch master · HEAD 0844883 · dirty 1 · unpushed 0 · worktrees 1 · verified-at 2026-09-23 06:38 -->
+<!-- machine header (hale-close): branch master · HEAD 00f0852 · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-23 06:38 -->
 
 ## Now
 - Hale · Morning 09-23: Ansel glances at the ONE changed copy line on `recursis-craft` (the mark is no longer "drawn as a triangle" → "loop = persistence, bite = ingenuity", commit 3bb0f93), then `git checkout master && git merge --no-edit recursis-craft && git push origin master`. That ships serpent mark A (owner pick 09-23 03:45, lukewarm → refinement round later), favicon/touch/og/logo files, the motion pass (craft.js 3.8 KB, CSS +10 KB, reduced-motion static), sticky header, ladder-as-climb, and the #hire 390px grid fix.
