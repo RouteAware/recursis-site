@@ -71,7 +71,7 @@ h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.04;font-weight:700;margin-to
 .hero{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:56px;align-items:center}
 .hero-copy{grid-column:1;grid-row:1;min-width:0}
 .hero-mark{grid-column:2;grid-row:1;width:clamp(220px,27vw,380px);height:auto;aspect-ratio:1/1;opacity:.34;pointer-events:none;justify-self:end;align-self:center}
-.hero .facts{max-width:420px}  /* 2+2 chips beside the mark; a lone fourth chip read as an orphan (Delacroix 09-23) */
+.hero .facts{max-width:470px}  /* 2+2 chips beside the mark; a lone fourth chip read as an orphan (Delacroix 09-23) */
 @media(max-width:960px){.hero{display:block}.hero-mark{display:none}.hero .facts{max-width:none}}  /* 760–960 band: 5-line h1 beside a 220px mark was the weak view; copy takes the width */
 @media(max-width:640px){.hero{padding:52px 0 28px}}
 .hero-mark path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
