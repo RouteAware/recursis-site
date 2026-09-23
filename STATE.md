@@ -1,25 +1,23 @@
-# Recursis-Site — STATE (written by Hale at close, 2026-09-21)
-<!-- machine header (hale-close): branch master · HEAD 42e1f3c · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-21 09:14 -->
+# Recursis-Site — STATE (written by Hale at close, 2026-09-23)
+<!-- machine header (hale-close): branch master · HEAD 7faf147 · dirty 0 · unpushed 0 · worktrees 0 · verified-at 2026-09-23 04:50 -->
 
 ## Now
-- Hale · branch `vivaris-card` is pushed and NOT merged: The Miniverse card → **Vivaris**, link
-  `https://vivaris.app`, and `logos/vivaris.png` (96×96, the same size as every other card logo).
-  Merge it only once vivaris.app actually resolves — until then the card would link to nothing.
-- Alexander · the logo ask below is CLOSED: the sim has a real mark now (sim-v2 branch
-  `vivaris-identity`, `apps/web/public/brand/`), and the card logo is cut from it.
+- Hale · Morning 09-23: Ansel glances at the ONE changed copy line on `recursis-craft` (the mark is no longer "drawn as a triangle" → "loop = persistence, bite = ingenuity", commit 3bb0f93), then `git checkout master && git merge --no-edit recursis-craft && git push origin master`. That ships serpent mark A (owner pick 09-23 03:45, lukewarm → refinement round later), favicon/touch/og/logo files, the motion pass (craft.js 3.8 KB, CSS +10 KB, reduced-motion static), sticky header, ladder-as-climb, and the #hire 390px grid fix.
+- Alexander · after the merge: replace the triangle mark off-site by hand — FB/IG avatar + cover (`~/Desktop/social-kits-staging/recursis-avatar.png`, `recursis-cover.png`), Fourthwall merch art (`merch-art/print-recursis-*.png`, four files; printed goods = his call). The old triangle form is disqualified (owner 09-23 02:55).
 
 ## Verified live
-- The Miniverse card (In development) live on recursisdigital.com · `curl -s https://recursisdigital.com | grep -c sim-v2-eta` → 1 · 2026-09-18 · SUPERSEDED by `vivaris-card` once merged
-- Vercel production deploy Ready from commit 6252d08 · `npx vercel ls` in this folder · 2026-09-18
+- master 7faf147 on recursisdigital.com: `#what-we-build` six-rung ladder + Vivaris card pill "Early alpha" · `curl -s https://recursisdigital.com/ | grep -o 'id="what-we-build"\|Early alpha'` · 2026-09-23 02:35 ET.
+- Preview `recursis-craft` Ready (mark A + motion): https://recursis-site-6frmusa5n-alexander-hughes-projects.vercel.app · 2026-09-23 03:20 ET.
 
 ## Open owner calls
-- ~~A logo for The Miniverse card~~ · CLOSED 2026-09-21: the mark exists and is on the card
-- The card's status flips to "Live" only when a stranger flow is proven (council 09-18) · default: In development
-- Merging `vivaris-card` before vivaris.app resolves ships a dead link · Hale's default: hold the merge
+- Mark A refinement round (he "guesses he agrees with A") · default: ship A, refine within the week · decide-by 2026-09-26
+- Printed merch with the old triangle mark: pull listings or let stock run out · default: pull the four Recursis merch listings until re-art · decide-by 2026-09-26
+- Vivaris card flips to "Live" only when a stranger flow is proven (council 09-18) · default: Early alpha
 
 ## Rollback
-- `git revert 6252d08 && git push origin master` — Vercel auto-redeploys in ~6 s.
+- `git revert -m 1 7faf147 && git push origin master` removes tonight's two merges (Vercel redeploys in seconds). After the craft merge: `git revert -m 1 <merge-sha>`.
 
 ## Do-not-touch
-- The navbar: hand-duplicated 8× across index/about/hire/ideas (memory `recursis-site-nav-gotcha`) — change all eight or none · no expiry.
+- Branch `recursis-craft` — pushed, unmerged until Ansel's glance · expiry 2026-09-24.
+- The navbar: hand-duplicated across index/about/hire/ideas (memory `recursis-site-nav-gotcha`) — change all or none · no expiry.
 - This folder is on the iCloud Desktop: check for ` 2.html` duplicates before every commit · no expiry.
