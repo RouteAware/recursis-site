@@ -12,18 +12,19 @@
   <meta property="og:image" content="https://recursisdigital.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Recursis — teal triangular ouroboros mark beside the line “We build honest software people actually use.” on a dark ground" />
+  <meta property="og:image:alt" content="Recursis — teal serpent ouroboros mark beside the line “We build honest software people actually use.” on a dark ground" />
   <meta property="og:site_name" content="Recursis" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://recursisdigital.com/og.png" />
   <meta name="theme-color" content="#0a0b0d" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="canonical" href="https://recursisdigital.com/" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png?v=3" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className+=" motion"}catch(e){}</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,19 +43,6 @@
     ]
   }
   </script>
-  <style>
-    /* What we build — capability ladder (mobile-first) */
-    .rungs{list-style:none;display:grid;gap:12px}
-    .rung{border:1px solid var(--line);background:var(--panel-2);border-radius:14px;padding:20px;display:grid;gap:6px;transition:border-color .15s ease}
-    .rung:hover{border-color:var(--accent-dim)}
-    .rung .rnum{color:var(--accent);font-size:12px;letter-spacing:.14em}
-    .rung h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
-    .rung p{color:var(--muted);font-size:.92rem;margin-top:6px}
-    .rung p a{color:var(--text);border-bottom:1px solid var(--accent-dim)}
-    .rung p a:hover{border-bottom-color:var(--accent)}
-    @media(min-width:760px){.rung{grid-template-columns:104px 1fr;column-gap:20px;padding:22px 24px}.rung .rnum{padding-top:3px}.rung p{max-width:72ch}}
-    @media(prefers-reduced-motion:reduce){.rung{transition:none}}
-  </style>
 </head>
 <body>
   <div class="wrap">
@@ -62,10 +50,13 @@
       <div class="nav">
         <a class="brand" href="/">
           <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
-            <path class="draw" stroke-width="9" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-            <path class="fade" stroke-width="7" d="M33,40 L38,31"/>
-            <path class="fade" stroke-width="5" d="M38,31 L44,20"/>
-            <circle class="eye fade" cx="47" cy="13" r="4"/>
+            <path class="body seg" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+            <path class="body seg" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+            <path class="body seg" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+            <path class="body seg" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+            <path class="body seg" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+            <path class="fillbody fade" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
+            <circle class="eye fade" cx="44.83" cy="18.98" r="2.45"/>
           </svg>
           <span class="name display">RECURSIS</span>
         </a>
@@ -101,16 +92,28 @@
     <section class="hero">
       <svg class="hero-mark" viewBox="0 0 100 100" aria-hidden="true">
         <g>
-          <path class="draw" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-          <path class="fade" d="M33,40 L44,20"/>
+          <path class="body seg" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+          <path class="body seg" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+          <path class="body seg" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+          <path class="body seg" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+          <path class="body seg" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+          <path class="fillbody fade" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
         </g>
-        <g transform="translate(50,57) scale(.6) translate(-50,-57)">
-          <path class="draw" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-          <path class="fade" d="M33,40 L44,20"/>
+        <g transform="rotate(128 50 51) translate(50,51) scale(.62) translate(-50,-51)">
+          <path class="body seg" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+          <path class="body seg" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+          <path class="body seg" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+          <path class="body seg" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+          <path class="body seg" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+          <path class="fillbody fade" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
         </g>
-        <g transform="translate(50,57) scale(.3) translate(-50,-57)">
-          <path class="draw" d="M41,15 Q49,8 55,18 L82,66 Q88,77 76,77 L24,77 Q12,77 18,66 L33,40"/>
-          <path class="fade" d="M33,40 L44,20"/>
+        <g transform="rotate(254 50 51) translate(50,51) scale(.32) translate(-50,-51)">
+          <path class="body seg" d="M54.24 20.80 A30.50 30.50 0 0 1 79.74 44.24" stroke-width="3.00"/>
+          <path class="body seg" d="M79.59 43.62 A30.50 30.50 0 0 1 67.41 76.05" stroke-width="4.60"/>
+          <path class="body seg" d="M67.93 75.68 A30.50 30.50 0 0 1 33.30 76.52" stroke-width="6.20"/>
+          <path class="body seg" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
+          <path class="body seg" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
+          <path class="fillbody fade" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
         </g>
       </svg>
       <p class="eyebrow mono">Digital solutions · niche markets · built to scale</p>
@@ -125,8 +128,8 @@
     </section>
 
     <section class="dir" id="portfolio">
-      <h2 class="sect-head mono"><b>01</b>The portfolio</h2>
-      <div class="grid">
+      <h2 class="sect-head mono" data-reveal><b>01</b>The portfolio</h2>
+      <div class="grid" data-reveal data-stagger>
         <a class="card" href="https://toctalk.app" target="_blank" rel="noopener">
           <div class="top"><span class="tleft"><img class="vlogo" src="/logos/toctalk.png" alt="" width="40" height="40" /><span class="vname display">TOCTalk</span></span><span class="pill live">Live</span></div>
           <div class="sub mono">Community · iOS &amp; Android</div>
@@ -203,9 +206,9 @@
     </section>
 
     <section id="what-we-build">
-      <h2 class="sect-head mono"><b>02</b>What we build</h2>
-      <p class="lede" style="margin-top:0;max-width:62ch">From a one-page joke site to a native app that takes real payments. The portfolio above isn't just what we own — it's the range, and each one is a different kind of product built end to end. Simplest rung first.</p>
-      <ol class="rungs" style="margin-top:22px">
+      <h2 class="sect-head mono" data-reveal><b>02</b>What we build</h2>
+      <p class="lede" style="margin-top:0;max-width:62ch" data-reveal>From a one-page joke site to a native app that takes real payments. The portfolio above isn't just what we own — it's the range, and each one is a different kind of product built end to end. Simplest rung first.</p>
+      <ol class="rungs" style="margin-top:22px" data-reveal data-stagger>
         <li class="rung">
           <div class="rnum mono">/ 01</div>
           <div class="rbody">
@@ -249,15 +252,15 @@
           </div>
         </li>
       </ol>
-      <div class="strip" style="margin-top:18px">
+      <div class="strip landing" data-reveal>
         <p><strong style="color:var(--text)">Same hands on every rung.</strong> Designed, built, deployed, and still run in-house — and the ones further up the ladder, like RouteAware, LinkCart, and Vivaris, sit in the portfolio above with their real stage on them, because that's the rule here. If one of these rungs is the thing you need, tell us which: <a href="mailto:info@recursisdigital.com">info@recursisdigital.com</a>.</p>
         <a class="btn mono" href="/hire">Start a project →</a>
       </div>
     </section>
 
     <section id="principles">
-      <h2 class="sect-head mono"><b>03</b>How we build</h2>
-      <div class="plist">
+      <h2 class="sect-head mono" data-reveal><b>03</b>How we build</h2>
+      <div class="plist" data-reveal data-stagger>
         <div class="prin">
           <div class="num mono">/ 01</div>
           <h3 class="display">Niche is the strategy</h3>
@@ -282,8 +285,8 @@
     </section>
 
     <section id="hire">
-      <h2 class="sect-head mono"><b>04</b>The shop is for hire</h2>
-      <div class="plist" style="grid-template-columns:1fr 1fr 1fr">
+      <h2 class="sect-head mono" data-reveal><b>04</b>The shop is for hire</h2>
+      <div class="plist trio" data-reveal data-stagger>
         <div class="prin">
           <div class="num mono">/ WEB</div>
           <h3 class="display">Websites</h3>
@@ -300,15 +303,15 @@
           <p>iOS and Android apps that actually make it to the store — and the backends that keep them alive after launch.</p>
         </div>
       </div>
-      <div class="strip" style="margin-top:16px">
+      <div class="strip" style="margin-top:20px" data-reveal>
         <p><strong style="color:var(--text)">Everything on this page was built by the same hands.</strong> The apps, the sites, the stores, the pipes underneath — one small shop with big-shop tooling, short timelines, and you talk directly to the people who build it.</p>
         <a class="btn mono" href="/hire">Start a project →</a>
       </div>
     </section>
 
     <section>
-      <div class="strip">
-        <p><strong style="color:var(--text)">Why "Recursis"?</strong> A word we coined from recursion — "to run back." The mark is a snake eating its own tail, drawn as a triangle: persistence and ingenuity, the cycle of never giving up. The longer story is on the about page.</p>
+      <div class="strip" data-reveal>
+        <p><strong style="color:var(--text)">Why "Recursis"?</strong> A word we coined from recursion — "to run back." The mark is a snake eating its own tail: the loop is persistence, the bite is ingenuity — it closes the circle itself. The longer story is on the about page.</p>
         <a class="btn mono" href="/about">About Recursis →</a>
       </div>
     </section>
@@ -333,5 +336,6 @@
   <script defer src="/_vercel/speed-insights/script.js"></script>
   <script defer src="/meta-pixel.js"></script>
   <script src="/nav.js" defer></script>
+  <script src="/craft.js" defer></script>
 </body>
 </html>
