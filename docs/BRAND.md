@@ -56,8 +56,13 @@ Small sizes (≤32px — drop the scale rhythm; ≤16px — drop the eye as well
     <path class="body" d="M33.84 76.87 A30.50 30.50 0 0 1 20.08 45.08" stroke-width="7.80"/>
     <path class="body" d="M19.96 45.70 A30.50 30.50 0 0 1 43.66 21.17" stroke-width="9.20"/>
     <path class="fillbody" d="M39.85 15.77 C49.57 11.68 55.14 12.57 57.65 14.68 L48.23 20.30 L57.22 25.32 C50.41 27.56 43.35 28.38 42.38 27.65 Z"/>
+    <circle class="eye" cx="44.83" cy="18.98" r="2.45"/>  <!-- keep at ≤32px; drop only at ≤16px -->
 </svg>
 ```
+
+Social avatar (FB/IG, rendered at 40px): ticks at half depth (`stroke-width="1.5"`
+on the scale path) so the ring reads machined, not beaded; mark at ~69% of the
+canvas, centred at (512, 508) on 1024. Recipe: `social-kits-staging/recursis-avatar.png`.
 
 Working sources: the header `<svg class="mark">` in every page of
 `Recursis-Site`, `logo.svg`, `logo-light.svg`.
