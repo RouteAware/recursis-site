@@ -1,5 +1,5 @@
 # Recursis-Site — STATE (written by Hale at close, 2026-09-23)
-<!-- machine header (hale-close): branch master · HEAD 00f0852 · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-23 06:38 -->
+<!-- machine header (hale-close): branch master · HEAD 4b5cd6f · dirty 1 · unpushed 0 · worktrees 1 · verified-at 2026-09-24 06:43 -->
 
 ## Now
 - ✅ 2026-09-23 09:25 · HERO MARK PLACEMENT MERGED (0764b2f, owner "post now"): owner said the mark was "awkwardly placed and sized" → two-column hero, mark centred on the copy, viewBox cropped, 34% (owner pick A over solid-mark B), 2+2 chip block, mark hidden <960px. Gates: Delacroix visual ×2 (08:35, 08:50) → Nyla merge gate BLOCK 09:05 (grid rule leaked to the five other `.hero` pages) → scoped to `.hero--split` (7fbbea2) → Nyla PASS 09:20 with About/404/index 1451px captures. Rollback: Vercel → Recursis-Site → Deployments → the ed156e8 production deploy → Instant Rollback (≈30 s, no build). Git path: `git revert -m 1 0764b2f && git push origin master`. Last known-good master = ed156e8.
