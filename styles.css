@@ -103,6 +103,7 @@ section{padding:36px 0}
 .card .sub{margin-top:2px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .card p{color:var(--muted);font-size:.95rem;margin-top:10px;flex:1}
 .card .go{margin-top:16px;color:var(--accent);font-size:.8rem;letter-spacing:.04em}
+.card p.card-paused-note{flex:none;margin-top:6px;font-size:.85rem;font-style:italic}
 .card.soon{opacity:.75}
 .card.soon:hover{transform:none;border-color:var(--line)}
 
