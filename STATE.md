@@ -1,5 +1,5 @@
 # Recursis-Site — STATE (written by Hale at close, 2026-09-23)
-<!-- machine header (hale-close): branch master · HEAD c6b9580 · dirty 0 · unpushed 0 · worktrees 1 · verified-at 2026-09-25 14:43 -->
+<!-- machine header (hale-close): branch master · HEAD 9c67255 · dirty 0 · unpushed 0 · worktrees 2 · verified-at 2026-11-14 15:58 -->
 
 ## Now
 - Hale · ✅ 2026-11-14 12:22 ET · Vivaris card → 'Paused' + 'Offline for major renovations.' LIVE (master e47a42d; owner order; Ansel copy 12:13 ET; verified on recursisdigital.com). Rollback: revert the merge. Open: PokéSpa card still says 'restoration' + Live although PokéSpa closed repairs 11-14.
